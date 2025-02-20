@@ -4,7 +4,7 @@
 # NUMEROS DEL 0 AL 100 (COUNT)
 
 # sin recursividad 
-
+"""
 def conteo1 (num1 : int):
     for x in range (1,num1 +1):  # metodo mas facil
         print(x)
@@ -48,3 +48,44 @@ def countdown2 (numero2: int):
 
 countdown2(5)
 
+"""
+
+
+# Numeros del 1 al 10 
+
+# 1 sin recursividad 
+
+
+for x in range (1, 11):
+    print(x)
+
+print()
+
+# con recursividad 
+
+def count(num : int):
+    if num < 10 :
+        num += 1 
+        print(num)
+        count(num)
+
+count(0)
+
+print()
+# numeros del 10 al 1 
+# sin recursividad 
+
+num2 = 11
+while num2 > 1:
+    num2 -=1 
+    print(num2)
+
+# con recursividad
+
+def countdown(num3 : int):
+    if num3 > 1 :
+        num3 -= 1 
+        print(num3)
+        countdown(num3)
+print()
+countdown(11)
